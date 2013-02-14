@@ -1,3 +1,5 @@
+#!/bin/sh
+
 for dev in `ls /sys/bus/pci/devices/0000:$1/iommu_group/devices`; do
     echo $dev
     vendor=$(cat /sys/bus/pci/devices/$dev/vendor | sed 's/^0x//')

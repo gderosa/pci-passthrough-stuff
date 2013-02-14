@@ -1,3 +1,5 @@
+#!/bin/sh
+
 APPEND=''
 
 for arg in $@
